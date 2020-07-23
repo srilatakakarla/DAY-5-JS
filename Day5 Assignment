@@ -1,0 +1,29 @@
+<html>
+<style>
+body,p {
+ font-family:arial;
+ font-size:16px;
+ }
+</style> 
+<body>
+<h3> Positive Number Checker </h3>
+<br/>Enter a Number 
+<input type="text" id="num_value" name="num_value" size="5">
+<br><br>
+<button onclick="check_number()">Check Number</button>
+<br><br>
+<p id="demo"></p>
+<script>
+ function check_number() {
+var num_value= document.getElementById("num_value").value;
+if (num_value >=0 ) {
+	result = num_value + " is a Positive Number.";
+	 }
+	 else {
+	result = " Enter Only positive number";
+	 }
+document.getElementById("demo").innerHTML = result;
+ }
+</script>
+</body>
+</html>
